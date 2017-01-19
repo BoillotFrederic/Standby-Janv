@@ -1,0 +1,109 @@
+@font-face
+{
+  font-family:TRBD;
+  src:url('../fonts/Typo_Round_Bold_Demo.otf');
+}
+body
+{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  background-size:100% ;
+  width:100%;
+  /*background-image:url('../imgs/bg.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;*/
+}
+body:before
+{
+content:"";
+position:fixed;
+height:110%;
+width:110%;
+background:url('../imgs/bg.jpg');
+z-index:-1;
+-webkit-filter:blur(5px);
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+margin:-20px;
+padding:20px;
+}
+h1, h2
+{
+  text-align:center;
+}
+h3
+{
+  font-size:1.5em !important;
+  cursor:pointer;
+}
+h1, h2, h3
+{
+  color:#DDDDDD !important;
+  text-shadow:0 0 3px black;
+  font-family:TRBD !important;
+}
+p, form
+{
+  color:#CCCCCC;
+  text-shadow:0 0 3px black;
+}
+.container
+{
+  margin-top:20px;
+}
+#answer
+{
+  background-color:rgba(0, 0, 0, 0.8);
+}
+.col-xs-12, .col-sm-12, .col-md-6, .col-lg-6
+{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+#answer p
+{
+  display:none;
+}
+#contact
+{
+  background-color:#263238;
+}
+#contact .container,
+#copyright .container
+{
+  margin-top:0;
+}
+.btn
+{
+  background-color:#263238 !important;
+  border-color:#546e7a !important;
+  color:white !important;
+}
+.btn:hover
+{
+  background-color:#546e7a !important;
+  border-color:#90a4ae !important;
+}
+.form-group
+{
+  margin-top:-40px !important;
+}
+#copyright
+{
+  background-color:black;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-size:1.2em;
+  color:white;
+}
+span
+{
+  color:orangered;
+}
